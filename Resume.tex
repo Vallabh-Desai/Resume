@@ -1,55 +1,27 @@
 \documentclass[12pt,a4paper,sans]{moderncv}
  \moderncvstyle{classic}
- \moderncvcolor{burgundy}
- \renewcommand{\familydefault}{\sfdefault}
+ \moderncvcolor{burgundy} % black or burgundy ?
+ \renewcommand{\familydefault}{\sfdefault} %font-family default serif
  \nopagenumbers{}
- 
-% \usepackage{fontspec}
  \usepackage[utf8]{inputenc}
  \usepackage[scale=0.85]{geometry}
- \usepackage{fontawesome}
-% \usepackage{tikz}
- %\usepackage{hyperref}
- 
+ \usepackage{fontawesome}  %awesome icons :- github,android
  
  \firstname{Dharin}
  \familyname{Shah}
  \address{Ramchandra Lane, Malad}{Mumbai}{India}
  \mobile{+91-9619393474}
- \email{dharinshah6989@live.in}
-
- 
- %\github{{http://github.com/jdoe}
- 
- 
-
+ \email{dharinshah6989@live.in} 
  
  \begin{document}
  	\makecvtitle
  	\subsection{\hspace{10em} About Me} % HACK
 	I am a recent graduate from K.J Somiaya College of Engineering, Mumbai with BE in Infromation Technology. I have interests in \emph{Theoretical Computer Science}, Software design and Performance Engineering.  
- 	
- 	\section{Education}
- 	\cventry{2011--2015}{Bachelor in Information Technology}{K.J. Somaiya College of Engineering}{Mumbai}{Aggregate - 55\%}{}
- 	\cventry{2009--2011}{Higher Secondary}{Patkar Varde College}{Mumbai}{67\%}{}
- 	\cventry{1999--2009}{Secondary School}{Dr. S. Radhakrishnan Vidhyalaya}{Mumbai}{82\%}{}
- 	
- 	\section{Skills}
- 	\cvitemwithcomment{\bfseries{Languages}}{Java, Matlab, C, C++, Python, JavaScript, Assembly(Intel)}{Order based on Exposure}
-	\cvitem{\bfseries{Operating System}}{Linux (Arch Linux, Ubuntu), Windows, FreeBSD}
-	\cvitem{\bfseries{Version Control}}{Git, SVN}
-	\cvitem{\bfseries{Miscellaneous }}{Discrete Mathematics, UML, Object Oriented Design Patterns}
-	
-	\section{Projects}
-	\cvitem{Final Year\\  \href{www.github.com}{\faGithub}}{\textbf{Music Genre Classification and Detection Using Augmented Neural Networks} Designed and Implemented a Supervised Learning model to detect the genre of Music using 400 Training Samples and Selected Feature Set (\textbf{Matlab})}
-	
-	\cvitem{\hspace{-1pt}Learn Sanskrit \href{https://play.google.com/store/apps/details?id=com.kaizad.sanskritappflipper&hl=en}\faAndroid}{\textbf{Android Application for Sanskrit Teaching Group under \href{https://www.somaiya.edu/riidl}{RIIDL}} Developed an Android application in the 2nd year under RIIDL (\textbf{Java})}
-	
-	\cvitem{Game Engine\\ \href{https://github.com/Dharin-shah/GameEngine2D}{\faGithub}}{\textbf{A 2D Game Engine implemented in Java} A basic 2D game engine designed and implemented in Java with ongoing enhancements as branches (\textbf{Java})}
-	
-	\cvitem{Other Small Projects \href{https://github.com/Dharin-shah}{\faGithub}}{Dynamic Image Loading Puzzle Game, K-Means Applet Animation, Agglomerative Clustering Applet Animation, GifView in Android, 2D Robot Simulator}
-	
-	\section{Publication(s)}
-	\cvitem{IJCA Publication \href{http://www.ijcaonline.org/archives/volume119/number12/21123-4013}{\faFile}}{Paper based on Final year Project - Classification of Music Genre using Neural networks with cross entropy optimization and Soft-max output} 	
+	 
+	 \input{education-content.tex}
+	 \input{skill-content.tex}
+	 \input{project-content.tex}
+	 \input{publication-content.tex}
+	 %\input{interest-content.tex}
 
  \end{document}
