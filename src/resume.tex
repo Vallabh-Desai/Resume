@@ -1,26 +1,38 @@
 \documentclass[12pt,a4paper,sans]{moderncv}
- \moderncvstyle{classic}
- \moderncvcolor{burgundy} % black or burgundy ?
+ \moderncvstyle{banking}
+ \moderncvcolor{black} % black or burgundy ?
  \renewcommand{\familydefault}{\sfdefault} %font-family default serif
  \nopagenumbers{}
  \usepackage[utf8]{inputenc}
  \usepackage[scale=0.85]{geometry}
  \usepackage{fontawesome}  %awesome icons :- github,android
- \firstname{Dharin}
- \familyname{Shah}
+ \firstname{Vallabh}
+ \familyname{Desai}
  % Personal Information not Shown on GitHub
- \email{dharinshah6989@live.in} 
+ \email{vallabhdesai81ms@outlook.com} 
  
  \begin{document}
  	\makecvtitle
- 	\subsection{\hspace{10em} About Me} % HACK
-	I am a recent graduate from K.J Somaiya College of Engineering, Mumbai with BE in Information Technology. I have interests in \emph{Theoretical Computer Science}, \emph{Software design} and \emph{Performance Engineering}.  
-	 
+ 	\vspace{-30pt} %HACK
+ 	\section{\hspace{10em} About Me}	 % HACK
+	 \vspace{-10pt} % HACK
 	 \input{education-content.tex}
+	 \vspace{-10pt}
+	 \input{experience-content.tex}
+	 \vspace{-10pt} % HACK
 	 \input{skill-content.tex}
-	 \vspace{-20pt} % HACK
+	 \vspace{-10pt} % HACK
 	 \input{project-content.tex}
-	 \input{publication-content.tex}
-	 %\input{interest-content.tex}
+		 %\vspace{-10pt} % HACK
+		 %\input{publication-content.tex}
+		 %\vspace{-10pt} % HACK
+		 %\input{interest-content.tex}
+	 \vspace{-10pt} % HACK
+	 \input{courses-content.tex}
+	 %\pagebreak
+	 \vspace{-10pt} % HACK
+	 \input{responsibilities-content.tex}
+	 \vspace{-10pt} % HACK
+	 \input{social-content.tex}
 
  \end{document}
