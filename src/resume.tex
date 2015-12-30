@@ -4,6 +4,11 @@
  \renewcommand{\familydefault}{\sfdefault} %font-family default serif
  \nopagenumbers{}
  \usepackage[utf8]{inputenc}
+ \usepackage[colorlinks = true,
+ linkcolor = blue,
+ urlcolor  = blue,
+ citecolor = blue,
+ anchorcolor = blue]{hyperref}
  \usepackage[scale=0.85]{geometry}
  %\usepackage{fontawesome}  %awesome icons :- github,android
  \firstname{Vallabh}
@@ -35,5 +40,8 @@
 	 \input{responsibilities-content.tex}
 	 \vspace{-10pt} % HACK
 	 \input{social-content.tex}
+	 \let\thefootnote\relax\footnote{Click \href{https://vallabh-desai.github.io/Resume/}{Here} to view the latest version of this file}
+	 
+
 
  \end{document}
