@@ -1,9 +1,9 @@
 \documentclass[12pt,a4paper,sans]{moderncv}
- \moderncvstyle{banking}
- \moderncvcolor{black} % black or burgundy ?
- \renewcommand{\familydefault}{\sfdefault} %font-family default serif
- \nopagenumbers{}
- \usepackage[utf8]{inputenc}
+\moderncvstyle{banking}
+\moderncvcolor{black} % black or burgundy ?
+\renewcommand{\familydefault}{\sfdefault} %font-family default serif
+\nopagenumbers{}
+\usepackage[utf8]{inputenc}
 % \usepackage[colorlinks = true,
 % linkcolor = blue,
 % urlcolor  = blue,
@@ -16,6 +16,7 @@
  \familyname{Desai}
  % Personal Information not Shown on GitHub
  \email{vallabhdesai81ms@outlook.com} 
+ \newcommand{\Myinput}[2]{\vspace{#1}{\input{#2}}}
  
  \AfterPreamble{\hypersetup{
  		colorlinks=true,
@@ -33,28 +34,29 @@
  	\vspace{-30pt} %HACK
  	\section{\hspace{10em} About Me}{I have an avid interest in the field of Finance \& Economics and looking for an opportunity to pursue challenging work for the same.}	 % HACK
 	
-	 \vspace{-10pt} % HACK
-	 \input{education-content.tex}          % Education Section
+	\Myinput{-10pt}{education-content.tex}
+%	 \vspace{-10pt} % HACK
+%	 \input{education-content.tex}          % Education Section
 	
-	 \vspace{-10pt} %HACK
-	 \input{experience-content.tex}        	% Experience Section
+%	 \vspace{-10pt} %HACK
+	 \Myinput{-10pt}{experience-content.tex}        	% Experience Section
 	
-	 \vspace{-10pt} % HACK
-	 \input{courses-content.tex}			% Courses Pursued Section
+%	 \vspace{-10pt} % HACK
+	 \Myinput{-10pt}{courses-content.tex}			% Courses Pursued Section
 	
-	 \vspace{-10pt} % HACK
-	 \input{responsibilities-content.tex}	% Responsibilities Section
+%	 \vspace{-10pt} % HACK
+	 \Myinput{-10pt}{responsibilities-content.tex}	% Responsibilities Section
 	
 	 \pagebreak
 	 
-	 \vspace{-10pt} % HACK
-	 \input{skill-content.tex}				% Skill Section
+%	 \vspace{-10pt} % HACK
+	 \Myinput{-10pt}{skill-content.tex}				% Skill Section
 	
-	 \vspace{-10pt} % HACK
-	 \input{project-content.tex}			% Project Section
+%	 \vspace{-10pt} % HACK
+	 \Myinput{-10pt}{project-content.tex}			% Project Section
 	
-	 \vspace{-10pt} % HACK
-	 \input{social-content.tex}				% Social Activities Section
+%	 \vspace{-10pt} % HACK
+	 \Myinput{-10pt}{social-content.tex}				% Social Activities Section
 	 
 	 \let\thefootnote\relax\footnote{Click \href{https://docs.google.com/gview?url=https://raw.githubusercontent.com/Vallabh-Desai/Resume/edel/src/pdf/resume.pdf&embedded=true}{Here} to view the latest version of this file (\emph{Ignore if already on the web-page})}
 	 
